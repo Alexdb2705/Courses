@@ -5,12 +5,25 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <form action="https://google.com/search">
-            <input type="text" name="as_q" class="search-bar">
-            <input type="submit" value="Google Advanced Search">
-        </form>
         <div class="buttons">
-            <a href="index.html" name="Image">Go to Google Search</a>
+            <h1>Google advanced search</h1>
+            <a href="index.html" name="Google">Google Search</a>
+        </div>
+        <div class="advanced">
+            <p>Buscar páginas con...</p>
+            <form class="google_search" action="https://google.com/search">
+                <label for="todas">todas estas palabras:</label> 
+                <input id="todas" type="text" name="as_q" class="search-bar" placeholder="Buscar en Google Advanced"><p></p>
+                <label for="esta">esta palabra o frases exactas:</label> 
+                <input id="esta" type="text" name="as_epq" class="search-bar" placeholder="Buscar en Google Advanced"><p></p>
+                <label for="cualquiera">cualquiera de estas palabras::</label> 
+                <input id="cualquiera" type="text" name="as_oq" class="search-bar" placeholder="Buscar en Google Advanced"><p></p>
+                <label for="ninguna">ninguna de estas palabras:</label> 
+                <input id="ninguna" type="text" name="as_eq" class="search-bar" placeholder="Buscar en Google Advanced"><p></p>
+                <div>
+                    <input style="background-color: blue; color: white;" type="submit" value="Búsqueda avanzada">
+                </div>
+            </form>
         </div>
     </body>
 </html>

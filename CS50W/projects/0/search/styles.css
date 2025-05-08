@@ -1,25 +1,43 @@
+body {
+    text-align: center;
+}
+
 .buttons {
-    /* align-items: end; */
     text-align: end;
-    border: 1px solid black;
     font-family: sans-serif;
     margin: 10px;
     padding: 10px;
 }
 
 .search-bar {
-    align-items: center;
-    align-content: center;
-    align-self: center;
-    text-align: right;
-    justify-content: center;
-    justify-items: center;
-    justify-self: center;
     border: solid 1px blue;
     margin: 10px;
     padding: 10px
 }
 
-body {
+.searching {
     text-align: center;
 }
+
+input[value="Google Search"] {
+    align-self: bottom;
+}
+
+.buttons > h1 {
+    margin: 20px;
+    text-align: left;
+    color: red;
+}
+
+.advanced {
+    text-align: start;
+    font-family: sans-serif;
+}
+
+.buttons a {
+    margin: 10px;
+}
+
+/* form > input {
+    text-align: end;
+} */
