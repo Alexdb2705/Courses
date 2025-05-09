@@ -6,24 +6,27 @@ body {
     text-align: end;
     font-family: sans-serif;
     margin: 10px;
-    padding: 10px;
+    height: 60px;
 }
 
 .search-bar {
     border: solid 1px blue;
+    border-radius: 24px;
     margin: 10px;
     padding: 10px
 }
 
 .searching {
     text-align: center;
+    height: 142px;
+    max-width: 584px;
 }
 
 input[value="Google Search"] {
     align-self: bottom;
 }
 
-.buttons > h1 {
+.buttons > p {
     margin: 20px;
     text-align: left;
     color: red;
@@ -36,8 +39,12 @@ input[value="Google Search"] {
 
 .buttons a {
     margin: 10px;
+    text-decoration: none;
+    color: black;
 }
 
-/* form > input {
-    text-align: end;
-} */
+.Google_Image {
+    width: 805;
+    height: 125;
+}
+
