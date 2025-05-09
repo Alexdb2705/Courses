@@ -1,0 +1,71 @@
+%centered_flex {
+    display: flex;
+    justify-self: center;
+    flex-wrap: wrap;
+}
+
+%text-size-font {
+    font-size: 13px;
+    font-family: arial, sans-serif;
+}
+
+.top-buttons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: end;
+    flex-direction: row;
+    margin-bottom: 20px;
+    height: 60px;
+}
+
+.btn {
+    @extend %centered_flex;
+    flex-direction: column;
+}
+
+.top-buttons a {
+    @extend %text-size-font;
+    margin-right: 10px;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.logo-container {
+    @extend %centered_flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.centered-form {
+    @extend %centered_flex;
+    width: 584px;
+    height: 142px;
+    margin: 10px;
+    flex-direction: column;
+}
+
+.centered-form div {
+    @extend %centered_flex;
+    padding-top: 20px
+}
+
+.submit-buttons {
+    @extend %centered_flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.submit-buttons input {
+    margin: 10px;
+    padding: 3px;
+}
+
+.centered-form .search-bar input {
+    border: 1px solid #dfe1e5;
+    box-shadow: 0px 2px 8px 0px rgba(60, 64, 67, 0.25);
+    border-radius: 24px;
+    width: 582px;
+    height: 46px;
+}
