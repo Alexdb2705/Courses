@@ -1,4 +1,4 @@
-.submit-buttons, .centered-form div, .centered-form, .logo-container, .btn {
+.form-part, .top-buttons-box, .submit-buttons, .centered-form div, .centered-form, .logo-container, .top-buttons a, .btn {
   display: flex;
   justify-self: center;
   flex-wrap: wrap;
@@ -9,35 +9,45 @@
   font-family: arial, sans-serif;
 }
 
-.top-buttons {
-  margin-top: 10px;
+body {
+  height: 957px;
+  margin: 0;
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.top-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 48px;
+  padding: 6px;
   justify-content: end;
-  flex-direction: row;
-  margin-bottom: 20px;
-  height: 60px;
 }
 
 .btn {
   flex-direction: column;
+  justify-content: center;
 }
 
 .top-buttons a {
-  margin-right: 10px;
-  padding: 10px;
+  height: 24px;
   text-decoration: none;
   color: black;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .logo-container {
   align-items: center;
   flex-direction: column;
-  margin: 10px;
+  height: 290px;
 }
 
 .centered-form {
   width: 584px;
-  height: 142px;
+  height: 120px;
   margin: 10px;
   flex-direction: column;
 }
@@ -62,6 +72,24 @@
   border-radius: 24px;
   width: 582px;
   height: 46px;
+}
+
+.google-icon {
+  margin-top: 198px;
+}
+
+.top-buttons-box {
+  justify-content: center;
+  flex-direction: row;
+  align-content: center;
+  margin-right: 10px;
+}
+
+.form-part {
+  flex-direction: column;
+  align-items: center;
+  height: 120px;
+  padding: 20px;
 }
 
 /*# sourceMappingURL=styles.css.map */
