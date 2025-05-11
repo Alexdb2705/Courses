@@ -1,12 +1,17 @@
-.search-bar, .form-part, .top-buttons-box, .submit-buttons, .centered-form .submit-buttons div, .centered-form, .logo-container, .top-buttons a, .btn {
+.search-bar, .form-part, .top-buttons-box, .submit-buttons, .centered-form .submit-buttons div, .centered-form, .logo-container, .top-buttons a, .btn, .top-buttons {
   display: flex;
   justify-self: center;
   flex-wrap: wrap;
 }
 
-.top-buttons a {
+.advanced-sentence, .top-buttons a {
   font-size: 13px;
   font-family: arial, sans-serif;
+}
+
+.top-buttons a {
+  text-decoration: none;
+  color: black;
 }
 
 body {
@@ -18,23 +23,20 @@ body {
 }
 
 .top-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
   height: 48px;
   padding: 6px;
   justify-content: end;
+  flex-direction: row;
 }
 
 .btn {
   flex-direction: column;
   justify-content: center;
+  padding: 5px;
 }
 
 .top-buttons a {
   height: 24px;
-  text-decoration: none;
-  color: black;
   flex-direction: column;
   justify-content: center;
 }
@@ -128,6 +130,35 @@ body {
   margin: 0 auto;
   width: auto;
   max-width: 584px;
+}
+
+.logo-header-container {
+  align-self: center;
+  margin-right: auto;
+  margin-left: 14px;
+}
+
+.head-sentence {
+  height: "22.5px";
+}
+
+.advanced-sentence {
+  color: #d93025;
+  font-size: 20px;
+  margin-left: 45px;
+}
+
+#top-buttons-advanced {
+  padding: 8px;
+}
+
+.line {
+  border-bottom: 1px solid #ebebeb;
+  height: 0;
+}
+
+.advanced-form-main-ul {
+  list-style-type: none;
 }
 
 /*# sourceMappingURL=styles.css.map */

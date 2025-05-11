@@ -1,18 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Advanced Search</title>
+        <title>Google Advanced Search</title>
         <link rel="stylesheet" href="src/styles.css">
     </head>
     <body>
-        <div class="top-buttons">
-            <div class="btn">
-                <a href="index.html" name="Images" title="Go to Google Search">Google</a>
+        <div class="top-buttons" id="top-buttons-advanced">
+            <div class="logo-header-container">
+                <a href="index.html" name="Google" title="Go to Google Page"><img src="src/google-icon.png" alt="Google" width="74px" height="24px"></a>
+            </div>
+            <div class="top-buttons-box">
+                <div class="google-logo-header-container">
+                </div>
+                <div class="btn">
+                    <a href="index.html" name="Google" title="Go to Google">Google</a>
+                </div>
             </div>
         </div>
-        <form action="https://google.com/search">
-            <input type="text" name="q">
-            <input type="submit" value="Google Search">
-        </form>
+        <div class="head-sentence">
+            <p class="advanced-sentence">Advanced Search</p>
+        </div>
+        <div class="line"></div>
+        <div class="form-part">
+            <div class="advanced-form">
+                <div class="advanced-form-sentence-container">
+                    <p class="advanced-form-sentence">Find pages with...</p>
+                </div>
+                <div class="advanced-form-main">
+                    <ul class="advanced-form-main-ul">
+                        <li>
+                            <div class="row-advanced">
+                                <label for="all" class="label-row">all these words:</label>
+                                <input type="text" id="all" class="row-input">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row-advanced">
+                                <label for="exact" class="label-row">the exact word or phrase:</label>
+                                <input type="text" id="exact" class="row-input">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row-advanced">
+                                <label for="anyof" class="label-row">any of these words:</label>
+                                <input type="text" id="anyof" class="row-input">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row-advanced">
+                                <label for="noneof" class="label-row">none of this words:</label>
+                                <input type="text" id="noneof" class="row-input">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </body>
 </html>

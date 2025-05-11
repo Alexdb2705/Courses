@@ -9,6 +9,11 @@
     font-family: arial, sans-serif;
 }
 
+%no-decoration {
+    text-decoration: none;
+    color: black;
+}
+
 body {
     height: 957px;
     margin: 0;
@@ -18,26 +23,25 @@ body {
 }
 
 .top-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+    @extend %centered_flex;
     height: 48px;
     padding: 6px;
     justify-content: end;
+    flex-direction: row;
 }
 
 .btn {
     @extend %centered_flex;
     flex-direction: column;
     justify-content: center;
+    padding: 5px;
 }
 
 .top-buttons a {
     @extend %centered_flex;
     @extend %text-size-font;
+    @extend %no-decoration;
     height: 24px;
-    text-decoration: none;
-    color: black;
     flex-direction: column;
     justify-content: center;
 }
@@ -139,4 +143,36 @@ body {
     margin: 0 auto;
     width: auto;
     max-width: 584px;
+}
+
+// Advanced
+
+.logo-header-container {
+    align-self: center;
+    margin-right: auto;
+    margin-left: 14px;
+}
+
+.head-sentence {
+    height: "22.5px";
+}
+
+.advanced-sentence {
+    @extend %text-size-font;
+    color: #d93025;
+    font-size: 20px;
+    margin-left: 45px;
+}
+
+#top-buttons-advanced {
+    padding: 8px;
+}
+
+.line {
+    border-bottom: 1px solid #ebebeb;
+    height: 0;
+}
+
+.advanced-form-main-ul {
+    list-style-type: none;
 }
