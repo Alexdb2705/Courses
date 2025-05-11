@@ -176,3 +176,9 @@ body {
 .advanced-form-main-ul {
     list-style-type: none;
 }
+
+.advanced-form {
+    @extend %centered_flex;
+    flex-direction: column;
+    align-items: start;
+}

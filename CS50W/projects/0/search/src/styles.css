@@ -1,4 +1,4 @@
-.search-bar, .form-part, .top-buttons-box, .submit-buttons, .centered-form .submit-buttons div, .centered-form, .logo-container, .top-buttons a, .btn, .top-buttons {
+.advanced-form, .search-bar, .form-part, .top-buttons-box, .submit-buttons, .centered-form .submit-buttons div, .centered-form, .logo-container, .top-buttons a, .btn, .top-buttons {
   display: flex;
   justify-self: center;
   flex-wrap: wrap;
@@ -159,6 +159,11 @@ body {
 
 .advanced-form-main-ul {
   list-style-type: none;
+}
+
+.advanced-form {
+  flex-direction: column;
+  align-items: start;
 }
 
 /*# sourceMappingURL=styles.css.map */
