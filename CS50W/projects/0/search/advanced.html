@@ -27,32 +27,38 @@
                     <p class="advanced-form-sentence">Find pages with...</p>
                 </div>
                 <div class="advanced-form-main">
-                    <ul class="advanced-form-main-ul">
-                        <li>
-                            <div class="row-advanced">
-                                <label for="all" class="label-row">all these words:</label>
-                                <input type="text" id="all" class="row-input">
-                            </div>
-                        </li>
-                        <li>
-                            <div class="row-advanced">
-                                <label for="exact" class="label-row">the exact word or phrase:</label>
-                                <input type="text" id="exact" class="row-input">
-                            </div>
-                        </li>
-                        <li>
-                            <div class="row-advanced">
-                                <label for="anyof" class="label-row">any of these words:</label>
-                                <input type="text" id="anyof" class="row-input">
-                            </div>
-                        </li>
-                        <li>
-                            <div class="row-advanced">
-                                <label for="noneof" class="label-row">none of this words:</label>
-                                <input type="text" id="noneof" class="row-input">
-                            </div>
-                        </li>
-                    </ul>
+                    <form action="https://google.com/search">
+                        <ul class="advanced-form-main-ul">
+                            <li>
+                                <div class="row-advanced">
+                                    <label for="all" class="label-row">all these words:</label>
+                                    <input type="text" id="all" name="as_q" class="row-input" autocomplete="off">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row-advanced">
+                                    <label for="exact" class="label-row">the exact word or phrase:</label>
+                                    <input type="text" id="exact" name="as_epq" class="row-input" autocomplete="off">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row-advanced">
+                                    <label for="anyof" class="label-row">any of these words:</label>
+                                    <input type="text" id="anyof" name="as_oq" class="row-input" autocomplete="off">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row-advanced">
+                                    <label for="noneof" class="label-row">none of this words:</label>
+                                    <input type="text" id="noneof" name="as_eq" class="row-input" autocomplete="off">
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="submit-button-advanced">
+                            <input type="submit" value="Advanced Search">
+                            <input type="hidden" value="en" name="hl">
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>

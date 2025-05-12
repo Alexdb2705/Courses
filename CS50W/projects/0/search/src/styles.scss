@@ -20,6 +20,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    height: 100%;
 }
 
 .top-buttons {
@@ -145,6 +146,10 @@ body {
     max-width: 584px;
 }
 
+.search-bar input {
+    outline: none;
+}
+
 // Advanced
 
 .logo-header-container {
@@ -175,10 +180,63 @@ body {
 
 .advanced-form-main-ul {
     list-style-type: none;
+    padding: 0;
 }
 
 .advanced-form {
     @extend %centered_flex;
+    @extend %text-size-font;
     flex-direction: column;
-    align-items: start;
+    align-self: start;
+    margin: 25px;
+    width: 100%;
+}
+
+.row-advanced {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.row-advanced label {
+    width: 212px;
+}
+
+.row-advanced input {
+    width: 50%;
+    border-radius: 1px;
+    border: 1px solid #d9d9d9;
+    border-top: 1px solid #c0c0c0;
+    padding: 1px 8px;
+    height: 25px;
+}
+
+.advanced-form-sentence {
+    font-size: 16px;
+}
+
+ul li {
+    height: 42px;
+}
+
+.submit-button-advanced {
+    @extend %centered_flex;
+    flex-direction: row;
+    justify-content: end;
+    width: 462px;
+    height: 30px;
+    text-align: center;
+}
+
+.submit-button-advanced input {
+    background-color: #4d90fe;
+    border: 1px solid #3079ed;
+    color: #fff;
+    width: 120px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.advanced-form input {
+    outline: #4d90fe;
 }
