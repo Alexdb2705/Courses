@@ -222,4 +222,8 @@ ul li {
   outline: blue;
 }
 
+.submit-button-advanced input:hover {
+  background-color: #4c7fd1;
+}
+
 /*# sourceMappingURL=styles.css.map */
