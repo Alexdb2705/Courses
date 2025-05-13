@@ -14,4 +14,3 @@ except ZeroDivisionError:
     sys.exit(1)
 
 print(f"{x} / {y} = {result}")
-
