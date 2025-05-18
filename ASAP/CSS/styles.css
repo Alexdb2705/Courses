@@ -1,4 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
 h1 {
     color: red;
     font-size: 24px;
+    background-color: rgba(0, 255, 255, 0.3);
+}
+
+.first-div {
+    width: 90vw;
+    max-width: 400px;
+    /* height: 15vh; */
+    background-color: red;
+    color: blueviolet;
+
+    font-size: 23px;
+    font-weight: 500;
+    font-family: Inter, sans-serif;
+
+    border: 4px solid green;
+}
+
+.box {
+    width: 200px;
+    border: 3px solid red;
+    padding: 20px 5px 40px 15px;
+    margin: 1px 10px 20px 50px;
 }
