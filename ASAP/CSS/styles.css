@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+body {
+    height: 2300vh;
+}
+
 * {
     box-sizing: border-box;
+    margin: 0;
 }
 
 h1 {
@@ -29,4 +34,47 @@ h1 {
     border: 3px solid red;
     padding: 20px 5px 40px 15px;
     margin: 8px 10px 20px 50px;
+}
+
+.rel-title {
+    background-color: blue;
+    position: relative;
+    top: 10vw;
+    left: 5vw;
+}
+
+.abs-title {
+    background-color: orange;
+    position: absolute;
+    bottom: 0;
+    left: -85vw;
+}
+
+.parent {
+    height: 200px;
+    background-color: red;
+    position: relative;
+}
+
+.child {
+    width: 64px;
+    height: 64px;
+    background-color: green;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.fix-title {
+    position: fixed;
+    top: 0;
+    right: 0vw;
+    background-color: greenyellow;
+}
+
+.sticky-title {
+    position: sticky;
+    top: 30vh;
+    right: 0vw;
+    background-color: greenyellow;
 }
