@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 body {
-    height: 2300vh;
+    height: 150vh;
 }
 
 * {
@@ -114,4 +114,14 @@ h1 {
     .med-paragraph {
         font-size: 18px;
     }
+}
+
+.ps-button {
+    transition: background-color 500ms;
+}
+
+.ps-button:hover {
+    opacity: 30%;
+    background-color: red;
+    padding: 6px;
 }
