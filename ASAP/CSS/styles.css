@@ -137,3 +137,17 @@ h1 {
     background-color: aqua;
     margin-left: 4px;
 }
+
+.an-p {
+    animation: point-down 1000ms infinite alternate-reverse;
+}
+
+@keyframes point-down {
+    0% {
+        transform: translateY(0)
+    }
+
+    100% {
+        transform: translateY(16px)
+    }
+}
