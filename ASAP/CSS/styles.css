@@ -78,3 +78,40 @@ h1 {
     right: 0vw;
     background-color: greenyellow;
 }
+
+.med-title {
+    font-size: 52px;
+}
+
+.med-paragraph {
+    font-size: 24px;
+}
+
+@media (max-width: 640px) {
+    .med-title {
+        font-size: 36px;
+    }
+
+    .med-paragraph {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 540px) {
+    .med-title {
+        font-size: 32px;
+    }
+
+    .med-paragraph {
+        font-size: 20px;
+    }
+}
+@media (max-width: 356px) {
+    .med-title {
+        font-size: 28px;
+    }
+
+    .med-paragraph {
+        font-size: 18px;
+    }
+}
