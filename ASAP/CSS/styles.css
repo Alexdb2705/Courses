@@ -125,3 +125,15 @@ h1 {
     background-color: red;
     padding: 6px;
 }
+
+.ps-p::before {
+    content: "Hey my name is ";
+    background-color: blue;
+    margin-right: 4px;
+}
+
+.ps-p::after {
+    content: ". Nice to meet you";
+    background-color: aqua;
+    margin-left: 4px;
+}
