@@ -30,5 +30,38 @@ function null_undefined() {
 // strings()
 // numbers()
 // booleans()
-null_undefined()
+// null_undefined()
 
+
+function comparisonOperators() {
+    const year = 2025;
+    console.log("2025" == year);
+    console.log("2025" === year);
+    console.log("2025" != year);
+    console.log("2025" !== year);
+}
+
+function ifs() {
+    const hasName = true
+    const name = "Alex"
+    hasName && name==="Alex" 
+    ? console.log(`Hello, ${name}`) 
+    : hasName 
+    ? console.log(`You not Alex, you ${name}`) 
+    : console.log("You no name")
+
+    let result = (hasName && name==="Alex") ? "Bueno" : "Malo"
+    console.log(result)
+    let result2 = (hasName && name==="Alex") && "good" || "bad"
+    console.log(`Result is ${result2}`)
+
+}
+
+// comparisonOperators()
+// ifs()
+
+function loops() {
+    pass
+}
+
+loops()
