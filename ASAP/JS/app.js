@@ -61,7 +61,7 @@ function ifs() {
 // ifs()
 
 function loops() {
-    pass
+    
 }
 
 loops()
