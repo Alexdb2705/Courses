@@ -115,4 +115,80 @@ const arrowFunction = (USD) => {
 
 // console.log(functions())
 // console.log(exercise_5_48(1000))
-console.log(arrowFunction(1000))
+// console.log(arrowFunction(1000))
+
+function arrays() {
+    let array1 = ["Apples", "Bananas", "Eggs", "Milk"]
+    console.log(array1[0])
+    console.log(array1[array1.length - 1])
+    
+    console.log("")
+    console.log("Push:")
+    array1.push("Strawberrys")
+    console.log(array1[array1.length - 1])
+    console.log(array1)
+
+    console.log("")
+    console.log("Filters:")
+    let filteredArray1 = array1.filter((element) => {
+        console.log(element)
+    })
+    console.log(filteredArray1)
+    filteredArray1 = array1.filter((element) => {
+        console.log(element)
+        return true
+    })
+    console.log(filteredArray1)
+    filteredArray1 = array1.filter((element) => {
+        return element.startsWith("A")
+    })
+    console.log(filteredArray1)
+    console.log("Shorter form of doing filtering arrays if only 1 input and 1 line of return:")
+    console.log(array1.filter(element => element.startsWith("A")))
+    
+    console.log("")
+    console.log("Map arrays:")
+    let array2 = [1, 2, 3, 4, 5]
+    let mappedArray2 = array2.map((element) => {
+        return element*2
+    })
+    console.log(mappedArray2)
+    console.log("Shorter form of mapping arrays if only 1 input and 1 line of return:")
+    console.log(array2.map(element => element*2))
+}
+
+const exercise_6_25 = ages => ages.filter(element => element >= 18)
+
+const exercise_6_33_1 = ages => {
+    let adultAges = []
+    for (let i = 0; i < ages.length; i++) {
+        ages[i] >= 18 ? adultAges.push(ages[i]) : i+=0
+    }
+    return adultAges
+}
+
+const exercise_6_33_2 = ages => {let adultAges = []; for (let i = 0; i < ages.length; i++) {ages[i] >= 18 ? adultAges.push(ages[i]) : i+=0} return adultAges}
+
+const exercise_6_46_1 = USDs => {
+    return USDs.map((element) => {
+        return element * 1.5
+    })
+}
+
+const exercise_6_46_2 = USDs => USDs.map(element => element * 1.5)
+
+const exercise_6_50 = USDs => {
+    let AUDs = []
+    for (let i = 0; i < USDs.length; i++) {
+        AUDs.push(USDs[i] * 1.5)
+    }
+    return AUDs
+}
+
+// arrays()
+// console.log(exercise_6_25([18, 20, 16, 15, 21]))
+// console.log(exercise_6_33_1([18, 20, 16, 15, 21]))
+// console.log(exercise_6_33_2([18, 20, 16, 15, 21]))
+console.log(exercise_6_46_1([10, 20, 30, 40]))
+console.log(exercise_6_46_2([10, 20, 30, 40]))
+console.log(exercise_6_50([10, 20, 30, 40]))
