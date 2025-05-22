@@ -99,4 +99,20 @@ function exercise_5_20() {
 
 // loops()
 // exercise_5_05()
-exercise_5_20()
+// exercise_5_20()
+
+function functions() {
+    return "Heyy, Alex"
+}
+
+function exercise_5_48(USD) {
+    return USD * 1.5
+}
+
+const arrowFunction = (USD) => {
+    return USD * 1.5
+}
+
+// console.log(functions())
+// console.log(exercise_5_48(1000))
+console.log(arrowFunction(1000))
