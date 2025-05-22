@@ -24,7 +24,7 @@ function booleans() {
 }
 
 function null_undefined() {
-    
+
 }
 
 // strings()
@@ -44,15 +44,18 @@ function comparisonOperators() {
 function ifs() {
     const hasName = true
     const name = "Alex"
-    hasName && name==="Alex" 
-    ? console.log(`Hello, ${name}`) 
-    : hasName 
-    ? console.log(`You not Alex, you ${name}`) 
-    : console.log("You no name")
+    if (hasName && name === "Alex") {
+        console.log(`Hey, ${name}`)
+    }
+    hasName && name === "Alex"
+        ? console.log(`Hello, ${name}`)
+        : hasName
+            ? console.log(`You not Alex, you ${name}`)
+            : console.log("You no name")
 
-    let result = (hasName && name==="Alex") ? "Bueno" : "Malo"
+    let result = (hasName && name === "Alex") ? "Bueno" : "Malo"
     console.log(result)
-    let result2 = (hasName && name==="Alex") && "good" || "bad"
+    let result2 = (hasName && name === "Alex") && "good" || "bad"
     console.log(`Result is ${result2}`)
 
 }
@@ -61,7 +64,39 @@ function ifs() {
 // ifs()
 
 function loops() {
-    
+    let i = 0
+    while (i < 5) {
+        console.log(String(i))
+        console.log(i)
+        i++
+    }
+
+    for (let _ = 0; _ < 5; _++) {
+        console.log("Hi")
+    }
+
+    for (let i = 0; i < 5; i++) {
+        console.log(`i = ${i}`)
+    }
 }
 
-loops()
+function exercise_5_05() {
+    for (let i = 1; i <= 15; i++) {
+        !(i % 5)
+            ? console.log(`${i} - ASAP Frontend`)
+            : !(i % 2)
+                ? console.log(`${i} - Frontend`)
+                : console.log(`${i} - ASAP`)
+    }
+}
+
+function exercise_5_20() {
+    let course = "ASAP Frontend"
+    for (let i = 0; i < course.length; i++) {
+        console.log(course[i])
+    }
+}
+
+// loops()
+// exercise_5_05()
+exercise_5_20()
