@@ -4,9 +4,17 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
-        <script src="app.js"></script>
+        <script src="app.js" defer></script>
+        <link rel="stylesheet" href="style.css">
     </head>
-    <body>
-        
+    <body class="open">
+        <h1 id="heading">The DOM</h1>
+        <h2 id="changing-size">40: Sample text to view the size</h2>
+        <button onclick="changingSizeF('20')">20</button>
+        <button onclick="changingSizeF(30)">30</button>
+        <button onclick="changingSizeF(40)">40</button>
+        <button onclick="changingSizeF(50)">50</button>
+        <div class="sidebar"></div>
+        <button class="opener" onclick="toggleSidebar()">Side-bar</button>
     </body>
 </html>

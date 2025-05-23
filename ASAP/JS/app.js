@@ -226,7 +226,7 @@ function objects() {
     console.log(users)
     console.log(`Hi ${nameSearch}, you completed lessons: ` + users.filter(element => element.name === `${nameSearch}`)[0].lessonsCompleted)
 }
-let users_e = []
+
 const exercise_7_06_1 = (userToAdd) => {
     users_e.push(userToAdd)
 }
@@ -234,6 +234,37 @@ const exercise_7_06_1 = (userToAdd) => {
 const exercise_7_06_2 = userToAdd => users_e.push(userToAdd)
 
 // objects()
-exercise_7_06_1({ email: "e", password: "p", name: "n", discord: "d", subscription: "s", lessonsCompleted: "l" })
-exercise_7_06_2({ email: "e", password: "p", name: "n", discord: "d", subscription: "s", lessonsCompleted: "l" })
-console.log(users_e)
+// let users_e = []
+// exercise_7_06_1({ email: "e", password: "p", name: "n", discord: "d", subscription: "s", lessonsCompleted: "l" })
+// exercise_7_06_2({ email: "e", password: "p", name: "n", discord: "d", subscription: "s", lessonsCompleted: "l" })
+// console.log(users_e)
+
+function DOM() {
+    // 1st method
+    console.log(document.querySelector('#heading'))
+
+    // 2nd method (much less used)
+    console.log(document.getElementById("heading"))
+
+    // Change html content
+    document.querySelector("#heading").innerHTML = "This is: " + document.querySelector("#heading").innerHTML
+    document.querySelector("#heading").innerHTML += ", exactly."
+
+    // Change CSS
+    document.querySelector("#heading").style.backgroundColor = "red"
+    // document.querySelector("#heading").style.fontSize = "50px"
+
+    // document.querySelector("#changing-size").style.fontSize = `${document.querySelector("#changing-size").innerHTML[0]}${document.querySelector("#changing-size").innerHTML[1]}px`
+}
+
+const changingSizeF = size => document.querySelector("#changing-size").style.fontSize = size + "px"
+
+const openSide = () => {
+    document.querySelector("body").className === "open"
+        ? document.querySelector("body").className += "n"
+        : document.querySelector("body").className = "open"
+}
+
+const toggleSidebar = () => document.querySelector("body").classList.toggle("open")
+
+// DOM()
