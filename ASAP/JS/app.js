@@ -121,7 +121,7 @@ function arrays() {
     let array1 = ["Apples", "Bananas", "Eggs", "Milk"]
     console.log(array1[0])
     console.log(array1[array1.length - 1])
-    
+
     console.log("")
     console.log("Push:")
     array1.push("Strawberrys")
@@ -145,16 +145,16 @@ function arrays() {
     console.log(filteredArray1)
     console.log("Shorter form of doing filtering arrays if only 1 input and 1 line of return:")
     console.log(array1.filter(element => element.startsWith("A")))
-    
+
     console.log("")
     console.log("Map arrays:")
     let array2 = [1, 2, 3, 4, 5]
     let mappedArray2 = array2.map((element) => {
-        return element*2
+        return element * 2
     })
     console.log(mappedArray2)
     console.log("Shorter form of mapping arrays if only 1 input and 1 line of return:")
-    console.log(array2.map(element => element*2))
+    console.log(array2.map(element => element * 2))
 }
 
 const exercise_6_25 = ages => ages.filter(element => element >= 18)
@@ -162,12 +162,12 @@ const exercise_6_25 = ages => ages.filter(element => element >= 18)
 const exercise_6_33_1 = ages => {
     let adultAges = []
     for (let i = 0; i < ages.length; i++) {
-        ages[i] >= 18 ? adultAges.push(ages[i]) : i+=0
+        ages[i] >= 18 ? adultAges.push(ages[i]) : i += 0
     }
     return adultAges
 }
 
-const exercise_6_33_2 = ages => {let adultAges = []; for (let i = 0; i < ages.length; i++) {ages[i] >= 18 ? adultAges.push(ages[i]) : i+=0} return adultAges}
+const exercise_6_33_2 = ages => { let adultAges = []; for (let i = 0; i < ages.length; i++) { ages[i] >= 18 ? adultAges.push(ages[i]) : i += 0 } return adultAges }
 
 const exercise_6_46_1 = USDs => {
     return USDs.map((element) => {
@@ -189,6 +189,51 @@ const exercise_6_50 = USDs => {
 // console.log(exercise_6_25([18, 20, 16, 15, 21]))
 // console.log(exercise_6_33_1([18, 20, 16, 15, 21]))
 // console.log(exercise_6_33_2([18, 20, 16, 15, 21]))
-console.log(exercise_6_46_1([10, 20, 30, 40]))
-console.log(exercise_6_46_2([10, 20, 30, 40]))
-console.log(exercise_6_50([10, 20, 30, 40]))
+// console.log(exercise_6_46_1([10, 20, 30, 40]))
+// console.log(exercise_6_46_2([10, 20, 30, 40]))
+// console.log(exercise_6_50([10, 20, 30, 40]))
+
+function objects() {
+    let user = {
+        email: "example@gmail.com",
+        password: "test12234",
+        name: "John Doe",
+        discord: "examplediscord",
+        subscription: "VIP+",
+        lessonsCompleted: [1, 2, 3],
+    }
+    console.log(user)
+    console.log("Email is: " + user.email)
+    let users = [
+        {
+            email: "example@gmail.com",
+            password: "test1234",
+            name: "John Doe",
+            discord: "examplediscord",
+            subscription: "VIP+",
+            lessonsCompleted: [1, 2, 3],
+        },
+        {
+            email: "newuser@gmail.com",
+            password: "test1234",
+            name: "Alex",
+            discord: "alex_ds",
+            subscription: "VIP+",
+            lessonsCompleted: [1, 2, 3, 4, 6],
+        },
+    ]
+    nameSearch = "John Doe"
+    console.log(users)
+    console.log(`Hi ${nameSearch}, you completed lessons: ` + users.filter(element => element.name === `${nameSearch}`)[0].lessonsCompleted)
+}
+let users_e = []
+const exercise_7_06_1 = (userToAdd) => {
+    users_e.push(userToAdd)
+}
+
+const exercise_7_06_2 = userToAdd => users_e.push(userToAdd)
+
+// objects()
+exercise_7_06_1({ email: "e", password: "p", name: "n", discord: "d", subscription: "s", lessonsCompleted: "l" })
+exercise_7_06_2({ email: "e", password: "p", name: "n", discord: "d", subscription: "s", lessonsCompleted: "l" })
+console.log(users_e)
