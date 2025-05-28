@@ -10,3 +10,8 @@ let stringArr: string[][] = [['a'], ['b']]
 let arrofarr: any[][] = [[true], ['c'], [123]]
 
 // Tuples
+let person: [string, number] = ["John", 25]
+let people: [string, number][] = [
+    ["Alex", 23],
+    ["John", 25],
+]
