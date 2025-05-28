@@ -14,3 +14,9 @@ let people = [
     ["Alex", 23],
     ["John", 25],
 ];
+// Objects
+let student = {
+    name: "Alex",
+    age: 23,
+    isPassing: true
+};

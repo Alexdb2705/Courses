@@ -15,3 +15,14 @@ let people: [string, number][] = [
     ["Alex", 23],
     ["John", 25],
 ]
+
+// Objects
+let student: {
+    name: string,
+    age: number,
+    isPassing: boolean,
+} = {
+    name: "Alex",
+    age: 23,
+    isPassing: true
+}
