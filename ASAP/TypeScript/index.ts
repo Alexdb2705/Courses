@@ -39,3 +39,18 @@ let student1: Student = {
     age: 23, 
     isPassing: true,
 }
+
+// Interfaces
+interface Student1 {
+    name: string,
+    age: number,
+    isPassing: boolean,
+}
+
+let student2: Student1 = {
+    name: "John",
+    age: 18, 
+    isPassing: true,
+}
+
+// Unions

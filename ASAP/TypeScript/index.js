@@ -25,3 +25,9 @@ let student1 = {
     age: 23,
     isPassing: true,
 };
+let student2 = {
+    name: "John",
+    age: 18,
+    isPassing: true,
+};
+// Unions
