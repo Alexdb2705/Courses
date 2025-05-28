@@ -61,3 +61,23 @@ let arr1 = [1, 2, 3];
 let arr2 = ['a', 'b', 'c'];
 let number_result = getFirstElementParam(arr1);
 let string_result = getFirstElementParam(arr2);
+// Enums (when a variable can choose between different values )
+var Grade;
+(function (Grade) {
+    Grade["freshman"] = "First year student in high school";
+    Grade["sophomore"] = "Second year student in high school";
+    Grade["junior"] = "Third year student in high school";
+    Grade["senior"] = "Fourth year student in high school";
+})(Grade || (Grade = {}));
+function displayStudentInfo(student) {
+    const studentInfo = student.name + "\n" + student.age + "\n" + student.grade;
+    document.body.innerHTML = studentInfo;
+}
+// displayStudentInfo({
+//     name: "John", 
+//     age: 15, 
+//     grade: Grade.sophomore})
+displayStudentInfo({
+    name: "Alex",
+    grade: Grade.senior
+});
