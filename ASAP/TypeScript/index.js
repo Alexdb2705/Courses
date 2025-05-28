@@ -31,3 +31,7 @@ let student2 = {
     isPassing: true,
 };
 // Unions
+let result = 25;
+result = "Correct";
+let johnIsPassing = "passed";
+// Type Assertion

@@ -54,3 +54,10 @@ let student2: Student1 = {
 }
 
 // Unions
+let result: string | number = 25
+result = "Correct"
+
+type isPassing = "passed" | "failed"
+let johnIsPassing: isPassing = "passed"
+
+// Type Assertion
