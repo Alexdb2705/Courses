@@ -35,3 +35,7 @@ let result = 25;
 result = "Correct";
 let johnIsPassing = "passed";
 // Type Assertion
+let y = "hello";
+y = 22;
+y = "hi";
+// Functions
