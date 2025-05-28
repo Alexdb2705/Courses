@@ -26,3 +26,16 @@ let student: {
     age: 23,
     isPassing: true
 }
+
+// Custom Types
+type Student = {
+    name: string,
+    age: number,
+    isPassing: boolean,
+}
+
+let student1: Student = {
+    name: "Alex",
+    age: 23, 
+    isPassing: true,
+}

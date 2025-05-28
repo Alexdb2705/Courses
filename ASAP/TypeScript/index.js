@@ -20,3 +20,8 @@ let student = {
     age: 23,
     isPassing: true
 };
+let student1 = {
+    name: "Alex",
+    age: 23,
+    isPassing: true,
+};
