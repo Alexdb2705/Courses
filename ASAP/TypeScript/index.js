@@ -39,3 +39,25 @@ let y = "hello";
 y = 22;
 y = "hi";
 // Functions
+function sum(num1, num2) {
+    return num1 + num2;
+}
+sum(1, 2);
+function greet() {
+    console.log('Hello!');
+}
+function getFirstElementArray(arr) {
+    return typeof (arr[0]) === "string" ? arr[0].toUpperCase() : arr[0];
+}
+getFirstElementArray(['a', 123]);
+function getFirstElement(arr) {
+    return arr[0];
+}
+getFirstElement([1, 12, 3]);
+function getFirstElementParam(arr) {
+    return arr[0];
+}
+let arr1 = [1, 2, 3];
+let arr2 = ['a', 'b', 'c'];
+let number_result = getFirstElementParam(arr1);
+let string_result = getFirstElementParam(arr2);

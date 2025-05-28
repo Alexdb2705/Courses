@@ -66,3 +66,37 @@ y = <number> 22
 y = <string> "hi"
 
 // Functions
+function sum(num1: number, num2: number): number {
+    return num1 + num2
+}
+
+sum(1, 2)
+
+function greet(): void {
+    console.log('Hello!')
+}
+
+// Generics
+
+type string_number = string | number
+
+function getFirstElementArray(arr: string_number[]): string_number {
+    return typeof(arr[0]) === "string" ? arr[0].toUpperCase() : arr[0]
+}
+
+getFirstElementArray(['a', 123])
+
+function getFirstElement(arr: number[]): number {
+    return arr[0]
+}
+
+getFirstElement([1, 12, 3])
+
+function getFirstElementParam<ArrType>(arr: ArrType[]): ArrType {
+    return arr[0]
+}
+
+let arr1: number[] = [1, 2, 3]
+let arr2: string[] = ['a', 'b', 'c']
+let number_result: number = getFirstElementParam<number>(arr1)
+let string_result: string = getFirstElementParam<string>(arr2)
