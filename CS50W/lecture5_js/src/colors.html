@@ -6,10 +6,10 @@
         <title>Colors</title>
         <script>
 
-            document.addEventListener('DOMContentLoaded', function() {
+            document.addEventListener('DOMContentLoaded', () => {
 
-                document.querySelectorAll('button').forEach(function(button) {
-                    button.onclick = function() {
+                document.querySelectorAll('button').forEach(button => {
+                    button.onclick = () => {
                         document.querySelector('#hello').style.color = button.dataset.color;
                         // The line below works also correctly
                         // document.querySelector('#hello').style.color = button.innerHTML.toLowerCase();
