@@ -5,9 +5,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Hello</title>
         <script>
-
             function hello() {
-                document.querySelector('h1').innerHTML = 'Hello, world!';
+                const heading = document.querySelector('h1')
+                
+                if (heading.innerHTML === 'Hello!') {
+                    heading.innerHTML = 'Goodbye!';
+                }
+                else {
+                    heading.innerHTML = 'Hello!';
+                }
             }
 
         </script>
