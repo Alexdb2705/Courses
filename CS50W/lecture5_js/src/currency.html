@@ -5,21 +5,42 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Currency Exchange</title>
         <script>
-
             document.addEventListener('DOMContentLoaded', function() {
 
-                fetch('https://api.exchangeratesapi.io/v1/latest?access_key=0d7ba8c184073c8e35186cd3ae21b052')
-                .then(response => response.json())
-                .then(data => {
-                    const USDrate = data.rates.USD;
-                    document.querySelector('body').innerHTML = `1 EUR is equal to ${USDrate.toFixed(3)} USD.`
-                });
+                document.querySelector('form').onsubmit = function() {
+
+                    fetch('https://api.exchangeratesapi.io/v1/latest?access_key=0d7ba8c184073c8e35186cd3ae21b052')
+                    .then(response => response.json())
+                    .then(data => {
+                        const currency = document.querySelector('#currency').value.toUpperCase();
+                        const money = document.querySelector('#money').value;
+                        if (currency in data.rates) {
+                            const rate = data.rates[currency];
+                            document.querySelector('#result').innerHTML = `${money} EUR is equal to ${(rate*money).toFixed(3)} ${currency}.`;
+                        } else {
+                            document.querySelector('#result').innerHTML = 'Invalid currency.';
+                        }
+                    })
+                    .catch(error => {
+                        console.log('Error: ', error)
+                    });
+
+                    return false;
+                }
+
 
             });
 
         </script>
     </head>
     <body>
-        
+        <form>
+            <input id="money" placeholder="Amount" type="number">
+            <input id="currency" placeholder="Currency" type="text">
+            <input type="submit" value="Convert">
+        </form>
+        <div id="result">
+
+        </div>
     </body>
 </html>
